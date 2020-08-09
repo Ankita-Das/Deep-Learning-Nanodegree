@@ -1,0 +1,11 @@
+{
+    "Position" : "Hello ! I am Cruiter ! May I know for what role you are looking employees for ?",
+    "Type" : "What kind of opportunity is this (internship / full-time) ?",
+    "Role" : "What are be the responsibilities of the applicant ?",
+    "Location" : "What is the location for the job ?",
+    "YoeMin" : "What is the minimum years of experience you expect from the applicant ? (provide a number)",
+    "YoeMax" : "What is the maximum years of experience you expect from the applicant ? (provide a number)",
+    "Qualification" : "Provide the required qualifications to apply for this position",
+    "RequiredSkills" : "What are the required skills for the job ?",
+    "End" : "Your Job has been posted. Return to home page"
+}

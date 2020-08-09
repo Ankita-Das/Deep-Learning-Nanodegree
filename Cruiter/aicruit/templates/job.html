@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.job.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="job-container">
+        <div class="job-details">
+            <div class="detail position">
+                {{selected.details.Position}}
+            </div>    
+            <hr>
+
+            <div class="detail description">
+                {{selected.details.Role}}
+            </div>
+            
+            <div class="detail eligibity">
+                <b>Eligibity</b> - {{selected.details.Qualification}}
+            </div>
+
+            <div class="detail skills">
+                <b>Required Skills</b> - {{selected.details.RequiredSkills}}
+            </div>            
+
+            <div class="detail location">
+                <b>Location</b> - {{selected.details.Location}}
+            </div>
+
+            <div class="detail experience">
+                <b>Experience</b> - {{selected.details.YoeMin}} to {{selected.details.YoeMax}} Years
+            </div>
+        
+            <div class="detail apply">
+                <a href="{{ url_for('apply', id=selected.id) }}"><button type="button" class="apply-button">Apply Here</button></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

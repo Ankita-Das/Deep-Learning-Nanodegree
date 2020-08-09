@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.applicant.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="applicant-container">
+        {% if jobs %} 
+            <table class="jobs-table">
+                <tr>
+                    <th>Role</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Details</th>
+                </tr>
+        
+                {% for job in jobs %}
+                    <tr>
+                        <td>{{job.details.Position}}</td>
+                        <td>{{job.details.Location}}</td>
+                        <td>{{job.details.Type}}</td>
+                        <td><a href="{{ url_for('job', id=job.id) }}"><button type="button" class="details-button">Click Here</button></a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>
+                Sorry there are no open positions.
+            </p>
+        {% endif %}
+    </div>
+{% endblock %}

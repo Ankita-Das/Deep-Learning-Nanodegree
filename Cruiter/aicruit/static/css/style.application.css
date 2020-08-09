@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+}
+
+.application-container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.applications-table{
+    width : 90%;
+    margin: 5%;
+    font-size: 30px;
+}
+
+p{
+    margin: 8%;
+    font-size: 45px;
+}
+
+th, td{
+    padding: 1%;
+}
+
+th{    
+    background-color: firebrick;
+    color: floralwhite;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+td{
+    background-color: floralwhite;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20%;
+    border-width: 2px;
+}
+
+.resume-button{
+    font-size: 20px;
+    background-color: black;
+    color: floralwhite;
+    border-radius: 10%;
+    padding: 1%;
+}
+
+.resume-button:hover{
+    background-color: floralwhite;
+    color: black;
+}

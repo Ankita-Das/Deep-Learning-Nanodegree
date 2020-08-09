@@ -1,0 +1,7 @@
+applications:
+- name: AICruitApp
+  random-route: true
+  memory: 128M
+  buildpacks:
+  - python_buildpack
+ 

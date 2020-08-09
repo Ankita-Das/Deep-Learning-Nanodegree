@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.home.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="home-container">
+        <div class="card-home">
+            <div class="home-description">
+                Apply for jobs with a chatbot interface
+            </div>
+            <div>
+                <a href="{{ url_for('applicant') }}"><button type="button" class="link-button">Applicant</button></a>
+            </div>
+        </div>
+
+        <div class="card-home">
+            <div class="home-description">
+                Post and track jobs with a chatbot interface
+            </div>
+            <div>
+                <a href="{{ url_for('recruiter') }}"><button type="button" class="link-button">Recruiter</button></a>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.recruiter.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="recruiter-container">  
+        {% if jobs %}      
+            <table class="jobs-table">            
+                    <tr>
+                        <th>Job ID</th>
+                        <th>Role</th>                
+                        <th>Type</th>
+                        <th>Applications</th>
+                    </tr>
+                    {% for job in jobs %}
+                        <tr>
+                            <td>{{job.id}}</td>
+                            <td>{{job.details.Position}}</td>                    
+                            <td>{{job.details.Type}}</td>
+                            <td><a href="{{ url_for('application', id=job.id) }}"><button type="button" class="applications-button">View Applications</button></a></td>
+                        </tr>
+                    {% endfor %}            
+            </table>   
+        {% else %}
+            <p>
+                Sorry there are no open positions. Post a new job.
+            </p>
+        {% endif %}     
+    </div>    
+    <div class="post-button-container">
+        <a href="{{ url_for('post') }}"><button type="button" class="post-button">Post New Job</button></a>
+    </div>
+{% endblock %}

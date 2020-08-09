@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>AI-Cruit - Innovating hiring</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.bot.css') }}">  
+        <meta id="post-url" url="{{ url_for('post') }}">       
+    </head>
+
+    <body>
+        <div class="bot">
+            <div class="messages">
+                <div class="message-bot">{{message}}</div>
+            </div>
+
+            <div class="select">
+                <span class="user-option">Yes</span>
+                <span class="user-option">No</span>
+            </div>
+
+            <div class="send">
+                <form id="send-form" class="send-form">
+                    <input type="text" class="message-text-field" name="message" placeholder="Message">
+                </form>
+
+                <button type="button" form="send-form" value="Send" class="send-button">Send</button>
+            </div>
+            
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    </body>
+</html>

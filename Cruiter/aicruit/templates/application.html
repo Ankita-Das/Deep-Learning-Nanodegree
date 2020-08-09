@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.application.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="application-container">
+        {% if selected %} 
+            <table class="applications-table">
+                <tr>
+                    <th>Candidate ID</th>
+                    <th>Name</th>                
+                    <th>Email</th>
+                    <th>Application</th>
+                </tr>
+
+                {% for each in selected %}
+                    <tr>
+                        <td>{{each.id}}</td>
+                        <td>{{each.details.Name}}</td>                    
+                        <td>{{each.details.Email}}</td>
+                        <td><a href="{{ url_for('candidate', id=each.id) }}"><button type="button" class="resume-button">View Application</button></a></td>
+                    </tr>   
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>
+                No candidate applied for this position
+            </p>
+        {% endif %} 
+    </div>
+{% endblock %}

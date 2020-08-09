@@ -1,0 +1,10 @@
+.logo{
+    text-align: center;
+    color: brown;
+    font-size: 100px;
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}

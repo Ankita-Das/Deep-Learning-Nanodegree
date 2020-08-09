@@ -1,0 +1,9 @@
+{
+    "Name" : "Hi ! I am Cruiter ! I will help you with your application. Let's start by knowing your name",
+    "About" : "Awesome ! Now tell me about yourself - your strengths, weaknesses, hobbies, etc. (within 50 words)",
+    "Phno" : "Wow ! It was great knowing you ! Please share your contact no.",
+    "Email" : "If you don't mind please share your email id",    
+    "Resume" : "Provide a link to your resume, so that I can share with the recruiter",
+    "Why" : "What do you think makes you fit for this role ?",
+    "End" : "I have shared your application. You may return to home page"
+}

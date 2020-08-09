@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block static %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.candidate.details.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="candidate-container">
+        <div class="candidate-details">
+            <div class="detail name">
+                {{selected.details.Name}}
+            </div>    
+            <hr>
+
+            <div class="detail about">
+                {{selected.details.About}}
+            </div>
+
+            <div class="detail why">
+                <b>What do you think makes you fit for this role ?</b><br>
+                {{selected.details.Why}}
+            </div>
+            
+            <div class="detail phone">
+                <b>Phone No.</b> - {{selected.details.Phno}}
+            </div>
+
+            <div class="detail email">
+                <b>Email</b> - {{selected.details.Email}}
+            </div>            
+
+            <div class="detail resume">
+                <b>Resume</b> - <a href="{{selected.details.Resume}}">Click Here</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

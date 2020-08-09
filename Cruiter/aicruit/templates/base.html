@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cruiter - Innovating hiring</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.base.css') }}">
+
+        {% block static %}
+
+        {% endblock %}       
+    </head>
+
+    <body>
+        <div class="logo">
+            <a href="{{ url_for('home') }}">Cruiter 💩</a>
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>

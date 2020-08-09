@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+}
+
+.candidate-container{
+    display: flex;
+    justify-content: center;
+}
+
+.candidate-details{
+    width: 60%;
+    margin: 5%;
+    padding: 2%;
+    border-style: solid;
+    box-shadow: 10px 10px 8px #888888;
+    font-size: 30px;
+}
+
+.detail{
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.name{
+    font-size: 60px;
+}
+
+.apply{
+    text-align: center;
+}
+
+.apply-button{
+    font-size: 25px;
+    background-color: black;
+    color: floralwhite;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.apply-button:hover{
+    background-color: floralwhite;
+    color: black;
+}
